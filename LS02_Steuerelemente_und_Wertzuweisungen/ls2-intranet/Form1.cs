@@ -133,7 +133,7 @@ namespace ls2_intranet
                     User user = JsonConvert.DeserializeObject<User>(responseBody);
                     
                     lbl_status.ForeColor = Color.Green;
-                    lbl_status.Text = Resources.login_success;
+                    lbl_status.Text = "Angemeldet: " + user.UserRole + "\\" + user.UserId + " - " + user.DisplayName;
                     btn_login.Enabled = false;
                     _logSuccess = true;
                     nti_main.Icon = Resources.ls_ok;
