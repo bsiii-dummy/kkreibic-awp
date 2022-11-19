@@ -6,4 +6,11 @@ Lösung im ls2-intranet Ordner. Datenstand nicht aktuell, muss die aktuellste Ve
 
 Aufgrund von Langeweile habe ich mit meiner Lösung evtl. etwas übertrieben ;-)
 
+Der Authentifizierungs-Server ist laut Aufgabenstellung nicht erforderlich, aber ein schönes Gimmick. Die Nutzer werden via Post-Request an die API hinzugefügt, eine Anmeldung dafür braucht es nicht.
+Unter /api/User/ gibts es dafür auch alle Nutzer inklusive Pin. Bei diesem Level von Sicherheit machen wir uns natürlich nicht die Mühe von Hashing, denn mit einer PUT-Request an /api/User/{id} kann man natürlich jederzeit ALLE Daten (inklusive Nutzer-Id) ändern.
+
+Es ist eine Spielerei um Verschiedene Technologien kennenzulernen und nicht, um etwas für eine Production-Umgebung zu schaffen.
+
+Ich finde Entwicklung in C# ja schrecklich, aber ich habe noch nie so schnell eine API gebaut wie damit. Deswegen tut mir trotzdem jeder leid, der das regelmäßig Nutzen muss.
+
 Alle mitgelieferten Resourcen befinden sich in diesem Ordner.
