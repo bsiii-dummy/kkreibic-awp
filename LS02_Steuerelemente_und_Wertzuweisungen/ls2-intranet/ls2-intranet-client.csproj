@@ -8,16 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ls2_intranet</RootNamespace>
     <AssemblyName>ls2-intranet</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <LangVersion>7.3</LangVersion>
-    <ApplicationIcon>LS2-3-3_LS.ico</ApplicationIcon>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>default-crynet.snk</AssemblyOriginatorKeyFile>
-    <PublicSign>true</PublicSign>
-    <DelaySign>false</DelaySign>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +55,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoginRequest.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -73,8 +72,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="default-crynet.snk" />
-    <None Include="LS2-3-3_LS.ico" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +94,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LS2-3-2_LogoBackground.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS2-3-3_LS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS2-3-3_LS1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ls_quest.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS2-3-3_LS %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS2-3-3_LS %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LS2-3-3_LS %283%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

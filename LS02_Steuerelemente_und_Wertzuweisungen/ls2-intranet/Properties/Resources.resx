@@ -117,11 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="keypad_act" xml:space="preserve">
+    <value>Keys Akt.</value>
+  </data>
+  <data name="keypad_deact" xml:space="preserve">
+    <value>Keys Deakt.</value>
+  </data>
+  <data name="login_err_conns" xml:space="preserve">
+    <value>Die Anmeldedaten konnten nicht geprüft werden, da keine Verbindung besteht.</value>
+  </data>
+  <data name="login_err_creds" xml:space="preserve">
+    <value>Die Eingegebenen Zugangsdaten sind falsch.</value>
+  </data>
+  <data name="login_success" xml:space="preserve">
+    <value>Der Zugang zum Intranet wurde gewährt</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="LS2_3_1_Logo_LeitSystems" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LS2-3-1_Logo_LeitSystems.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LS2_3_2_LogoBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LS2-3-2_LogoBackground.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ls_err" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS2-3-3_LS (2).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LS_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS2-3-3_LS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ls_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LS2-3-3_LS (3).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ls_quest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ls_quest.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ntico_log_err" xml:space="preserve">
+    <value>Login Fehlerhaft</value>
+  </data>
+  <data name="ntico_log_req" xml:space="preserve">
+    <value>Login Erforderlich</value>
+  </data>
+  <data name="ntico_log_suc" xml:space="preserve">
+    <value>Zugang gewährt.</value>
   </data>
 </root>

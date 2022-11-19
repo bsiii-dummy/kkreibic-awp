@@ -61,6 +61,91 @@ namespace ls2_intranet.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Keys Akt. ähnelt.
+        /// </summary>
+        internal static string keypad_act {
+            get {
+                return ResourceManager.GetString("keypad_act", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Keys Deakt. ähnelt.
+        /// </summary>
+        internal static string keypad_deact {
+            get {
+                return ResourceManager.GetString("keypad_deact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Die Anmeldedaten konnten nicht geprüft werden, da keine Verbindung besteht. ähnelt.
+        /// </summary>
+        internal static string login_err_conns {
+            get {
+                return ResourceManager.GetString("login_err_conns", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Die Eingegebenen Zugangsdaten sind falsch. ähnelt.
+        /// </summary>
+        internal static string login_err_creds {
+            get {
+                return ResourceManager.GetString("login_err_creds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Der Zugang zum Intranet wurde gewährt ähnelt.
+        /// </summary>
+        internal static string login_success {
+            get {
+                return ResourceManager.GetString("login_success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon ls_err {
+            get {
+                object obj = ResourceManager.GetObject("ls_err", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon LS_icon {
+            get {
+                object obj = ResourceManager.GetObject("LS_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon ls_ok {
+            get {
+                object obj = ResourceManager.GetObject("ls_ok", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon ls_quest {
+            get {
+                object obj = ResourceManager.GetObject("ls_quest", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap LS2_3_1_Logo_LeitSystems {
@@ -77,6 +162,33 @@ namespace ls2_intranet.Properties {
             get {
                 object obj = ResourceManager.GetObject("LS2_3_2_LogoBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Login Fehlerhaft ähnelt.
+        /// </summary>
+        internal static string ntico_log_err {
+            get {
+                return ResourceManager.GetString("ntico_log_err", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Login Erforderlich ähnelt.
+        /// </summary>
+        internal static string ntico_log_req {
+            get {
+                return ResourceManager.GetString("ntico_log_req", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugang gewährt. ähnelt.
+        /// </summary>
+        internal static string ntico_log_suc {
+            get {
+                return ResourceManager.GetString("ntico_log_suc", resourceCulture);
             }
         }
     }
