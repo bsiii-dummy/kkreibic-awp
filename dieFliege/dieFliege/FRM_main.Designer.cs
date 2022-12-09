@@ -36,7 +36,12 @@
             this.pbx_fliege = new System.Windows.Forms.PictureBox();
             this.btn_ende = new System.Windows.Forms.Button();
             this.cb_border = new System.Windows.Forms.CheckBox();
+            this.txt_stepMulti = new System.Windows.Forms.TextBox();
+            this.btn_step_width = new System.Windows.Forms.Button();
+            this.cc_step_width = new System.Windows.Forms.ContainerControl();
+            this.lbl_step_width = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_fliege)).BeginInit();
+            this.cc_step_width.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_up
@@ -92,7 +97,7 @@
             // 
             // btn_ende
             // 
-            this.btn_ende.Location = new System.Drawing.Point(424, 386);
+            this.btn_ende.Location = new System.Drawing.Point(12, 389);
             this.btn_ende.Name = "btn_ende";
             this.btn_ende.Size = new System.Drawing.Size(75, 52);
             this.btn_ende.TabIndex = 5;
@@ -109,11 +114,52 @@
             this.cb_border.Text = "Am Rand halten";
             this.cb_border.UseVisualStyleBackColor = true;
             // 
-            // FRM_main
+            // txt_stepMulti
+            // 
+            this.txt_stepMulti.Location = new System.Drawing.Point(28, 26);
+            this.txt_stepMulti.Name = "txt_stepMulti";
+            this.txt_stepMulti.Size = new System.Drawing.Size(108, 20);
+            this.txt_stepMulti.TabIndex = 7;
+            this.txt_stepMulti.TextChanged += new System.EventHandler(this.txt_stepMulti_TextChanged);
+            // 
+            // btn_step_width
+            // 
+            this.btn_step_width.Location = new System.Drawing.Point(28, 54);
+            this.btn_step_width.Name = "btn_step_width";
+            this.btn_step_width.Size = new System.Drawing.Size(107, 23);
+            this.btn_step_width.TabIndex = 8;
+            this.btn_step_width.Text = "Set";
+            this.btn_step_width.UseVisualStyleBackColor = true;
+            this.btn_step_width.Click += new System.EventHandler(this.btn_step_width_Click);
+            // 
+            // cc_step_width
+            // 
+            this.cc_step_width.BackColor = System.Drawing.SystemColors.Control;
+            this.cc_step_width.Controls.Add(this.lbl_step_width);
+            this.cc_step_width.Controls.Add(this.btn_step_width);
+            this.cc_step_width.Controls.Add(this.txt_stepMulti);
+            this.cc_step_width.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.cc_step_width.Location = new System.Drawing.Point(517, 338);
+            this.cc_step_width.Name = "cc_step_width";
+            this.cc_step_width.Size = new System.Drawing.Size(158, 103);
+            this.cc_step_width.TabIndex = 9;
+            this.cc_step_width.Text = "Schrittweitenmultiplikator";
+            // 
+            // lbl_step_width
+            // 
+            this.lbl_step_width.Location = new System.Drawing.Point(3, 0);
+            this.lbl_step_width.Name = "lbl_step_width";
+            this.lbl_step_width.Size = new System.Drawing.Size(132, 23);
+            this.lbl_step_width.TabIndex = 9;
+            this.lbl_step_width.Text = "Schrittweitenmultiplikator";
+            // 
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 450);
+            this.ClientSize = new System.Drawing.Size(708, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.cc_step_width);
             this.Controls.Add(this.cb_border);
             this.Controls.Add(this.btn_ende);
             this.Controls.Add(this.pbx_fliege);
@@ -121,12 +167,24 @@
             this.Controls.Add(this.btn_down);
             this.Controls.Add(this.btn_left);
             this.Controls.Add(this.btn_up);
+            this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmMain";
             this.Text = "Die Flieege";
             ((System.ComponentModel.ISupportInitialize)(this.pbx_fliege)).EndInit();
+            this.cc_step_width.ResumeLayout(false);
+            this.cc_step_width.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label lbl_step_width;
+
+        private System.Windows.Forms.Button btn_step_width;
+        private System.Windows.Forms.ContainerControl cc_step_width;
+
+        private System.Windows.Forms.TextBox txt_stepMulti;
 
         private System.Windows.Forms.CheckBox cb_border;
 
