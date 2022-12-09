@@ -86,11 +86,6 @@ namespace dieFliege
         private void pbx_fliege_Click(object sender, EventArgs e)
         {
             MouseEventArgs mArgs = (MouseEventArgs)e;
-            if (mArgs.Button == System.Windows.Forms.MouseButtons.Left)
-            {
-                
-            }
-
             switch (mArgs.Button)
             {
                 case System.Windows.Forms.MouseButtons.Left:
