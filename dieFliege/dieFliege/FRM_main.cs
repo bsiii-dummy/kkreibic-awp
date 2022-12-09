@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace dieFliege
 {
-    public partial class FRM_main : Form
+    public partial class FrmMain : Form
     {
-        public FRM_main()
+        public FrmMain()
         {
             InitializeComponent();
         }

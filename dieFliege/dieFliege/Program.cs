@@ -16,7 +16,7 @@ namespace dieFliege
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRM_main());
+            Application.Run(new FrmMain());
         }
     }
 }

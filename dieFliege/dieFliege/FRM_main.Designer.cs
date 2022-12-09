@@ -1,6 +1,6 @@
 ﻿namespace dieFliege
 {
-    partial class FRM_main
+    partial class FrmMain
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.btn_up = new System.Windows.Forms.Button();
             this.btn_left = new System.Windows.Forms.Button();
             this.btn_down = new System.Windows.Forms.Button();
@@ -122,7 +122,7 @@
             this.Controls.Add(this.btn_left);
             this.Controls.Add(this.btn_up);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FRM_main";
+            this.Name = "FrmMain";
             this.Text = "Die Flieege";
             ((System.ComponentModel.ISupportInitialize)(this.pbx_fliege)).EndInit();
             this.ResumeLayout(false);
